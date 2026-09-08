@@ -45,7 +45,7 @@ endif
 
 ## * serve            : render website and run a local server
 serve : lesson-md index.md
-	${JEKYLL} serve
+	${JEKYLL} serve -H 0.0.0.0 -P 4000
 
 ## * site             : build website but do not run a server
 site : lesson-md index.md
