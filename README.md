@@ -52,43 +52,24 @@ This website currently requires a specific ruby version, 2.7.3.
 ### Windows/OS X
 Follow the instructions [here](https://carpentries.github.io/lesson-example/setup.html#jekyll-setup-for-lesson-development) for OS X/ Windows. There's also a Linux section in that link, but it involves installing homebrew. See below for an alternate way.
 
-### Linux alternate install
-Unfortunately the ubuntu/debian versions are currently out of date, and while conda-forge has newer and older versions, it does not have 2.7.3.  
-To install 2.7.3 on linux, it's usually easiest to do the following:
-1. Install [rbenv](https://github.com/rbenv/rbenv.git) (Ruby environment manager):
-    ```shell
-    git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-    ~/.rbenv/bin/rbenv init
-    ```
-    then <u><b>restart your shell</b></u>
-2. Install the ruby build plugin into the rbenv folder
-    ```
-    git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-    ```
-3. Use the following commands to install ruby 2.7.3, download the repo, set the local ruby version in the local directory to 2.7.3, install all the needed packages, and then cleanup:
-    ```
-    rbenv init
-    rbenv install 2.7.3
-    git clone <repo>
-    cd <repo dir>
-    rbenv local 2.7.3
-    rbenv shell 2.7.3
-    gem install bundler
-    make clean
-    ```
-
-    
-## Building the website locally
-Once you've installed the pre-requisites, simply `cd` into the repo folder in a  terminal and run:
+## Docker Install
+Preqs: Ensure [rootless docker](https://docs.docker.com/engine/security/rootless/) or [podman](https://podman.io/docs/installation#installing-on-linux) is installed.
+1. Either build or install the hosted image  
+  a. Build (can take awhile as ruby builds from source):  
+  `docker build . -t carpentries`   or `podman build . -t carpentries --format docker`  
+  b. install from downloaded image:   
+  `wget <image_url>`   
+  `docker image load <image_fname>` 
+2. Run the image:
 ```
-make serve
+# 1. Get the directory correct
+cd <the directory you cloned this repo to>
+# 2. Launch the image
+docker run -it --rm -p 127.0.0.1:4000:4000/tcp -v `pwd`:/app/carpentries_website carpentries
+# or
+podman run -it --rm -p 127.0.0.1:4000:4000/tcp -v `pwd`:/app/carpentries_website carpentries
 ```
-
-If you're working on a remote server via ssh, you can pass through the ports with:
-```
-ssh -N -L <local port>:localhost:<port on host>
-```
-then navigate in your web-browser to localhost:<port>  
+This will serve the website on your local port 4000
 
 
 ## Optional but Recommended Steps
