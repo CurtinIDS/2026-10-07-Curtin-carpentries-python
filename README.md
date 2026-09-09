@@ -53,7 +53,7 @@ This website currently requires a specific ruby version, 2.7.3.
 Follow the instructions [here](https://carpentries.github.io/lesson-example/setup.html#jekyll-setup-for-lesson-development) for OS X/ Windows. There's also a Linux section in that link, but it involves installing homebrew. See below for an alternate way.
 
 ## Docker Install
-Preqs: Ensure [rootless docker](https://docs.docker.com/engine/security/rootless/) or [podman](https://podman.io/docs/installation#installing-on-linux) is installed.
+Preqs: Ensure [rootless docker](https://docs.docker.com/engine/security/rootless/) or [podman](https://podman.io/docs/installation#installing-on-linux) is installed. You WILL get issues with file permissions with default rootfull docker installed.
 1. Either build or install the hosted image  
   a. Build (can take awhile as ruby builds from source):  
   `docker build . -t carpentries`   or `podman build . -t carpentries --format docker`  
