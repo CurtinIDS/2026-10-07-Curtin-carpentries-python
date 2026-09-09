@@ -17,37 +17,37 @@ You may be able to skip installing git if you already have it installed from the
 
 The full setup instructions are:
 Python
-1. Navigate to  the website https://www.python.org/downloads/ with your web browser.
-2. Download Python 3.13 (3.13.7 is fine) for your operating system
+1. Navigate to  the website [https://www.python.org/](https://www.python.org/downloads/) with your web browser.
+2. Download Python 3.14 (3.14.7 is fine) for your operating system
 3. Run the installer, following all prompts using the default settings
 Git
-4. Navigate to the website https://git-scm.com/downloads with your web browser
+4. Navigate to the website [https://git-scm.com/](https://git-scm.com/install/) with your web browser
 5. Download git for your operating system
 6. Run the installer, following all prompts using the default settings  
 VSCode
-7. Navigate to the website https://code.visualstudio.com/ with your web browser.
+7. Navigate to the website [https://code.visualstudio.com/](https://code.visualstudio.com/) with your web browser.
 8. Download Visual Studio Code for your specific platform/Operating System.
 
-    ![Download Visual Studio Code](assets/vs_code_download.jpg)
+    ![Download Visual Studio Code]({{relative_root_path}}/assets/vs_code_download.jpg)
 9. Run the Visual Studio Code Installer and follow all prompts.
 10. Open Visual Studio Code, navigate to the File Explorer and clone this repository with the following repository name `https://github.com/CurtinIDS/CIDS_Carpentries_Python` into your preferred folder destination.
 
-    ![Clone Repository with Visual Studio Code](assets/vs_code_clone_repo.jpg)
+    ![Clone Repository with Visual Studio Code]({{relative_root_path}}/assets/vs_code_clone_repo.jpg)
 11. Navigate to the Extension sidebar then search for and install the Python and Jupyter extensions.
 
-    ![Installing Extensions](assets/vs_code_extensions.jpg)
+    ![Installing Extensions]({{relative_root_path}}/assets/vs_code_extensions.jpg)
 12. Enter the Visual Studio Code Command Pallette using `Ctrl + Shift + P` (Windows) or `Command + Shift + P` (MacOS) and locate `Python: Create Environment`.
 
-    ![Creating a Virtual Environment](assets/vs_code_create_environment.png)
+    ![Creating a Virtual Environment]({{relative_root_path}}/assets/vs_code_create_environment.jpg)
 13. Select `venv`.
 
-    ![Creating a Conda Environment](assets/conda_env.png)
+    ![Creating a Conda Environment]({{relative_root_path}}/assets/conda_env.jpg)
 14. Select `Python 3.13`. (the version you just installed)
 
-    ![Selecting Python Version](assets/python_version.png)
+    ![Selecting Python Version]({{relative_root_path}}/assets/python_version.jpg)
 15. When asked to "Select dependencies to install", click the box next to requirements.txt and click "ok"
     
-    ![Selecting Dependencies](assets/vs_code_dependencies.png)
+    ![Selecting Dependencies]({{relative_root_path}}/assets/vs_code_dependencies.png)
 You should now be done!
 
 ONLY if you didn't do the step above when creating the virtual environment (venv):
