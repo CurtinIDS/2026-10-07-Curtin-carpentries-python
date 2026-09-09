@@ -26,26 +26,26 @@ The full setup instructions are:
 1. Navigate to the website [https://code.visualstudio.com/](https://code.visualstudio.com/) with your web browser.
 2. Download Visual Studio Code for your specific platform/Operating System.
 
-    ![Download Visual Studio Code]({{ relative_root_path }}{% link /assets/vs_code_download.jpg %})
+    ![Download Visual Studio Code]({{page.root}}{% link /assets/vs_code_download.jpg %})
 3. Run the Visual Studio Code Installer and follow all prompts.
 4. Open Visual Studio Code, navigate to the File Explorer and clone this repository with the following repository name `https://github.com/CurtinIDS/CIDS_Carpentries_Python` into your preferred folder destination.
 
-    ![Clone Repository with Visual Studio Code]({{ relative_root_path }}{% link /assets/vs_code_clone_repo.jpg %})
+    ![Clone Repository with Visual Studio Code]({{page.root}}{% link /assets/vs_code_clone_repo.jpg %})
 5. Navigate to the Extension sidebar then search for and install the Python and Jupyter extensions.
 
-    ![Installing Extensions]({{ relative_root_path }}{% link /assets/vs_code_extensions.jpg %})
+    ![Installing Extensions]({{page.root}}{% link /assets/vs_code_extensions.jpg %})
 12. Enter the Visual Studio Code Command Pallette using `Ctrl + Shift + P` (Windows) or `Command + Shift + P` (MacOS) and locate `Python: Create Environment`.
 
-    ![Creating a Virtual Environment]({{ relative_root_path }}{% link /assets/vs_code_create_environment.jpg %})
+    ![Creating a Virtual Environment]({{page.root}}{% link /assets/vs_code_create_environment.jpg %})
 13. Select `venv`.
 
-    ![Creating a Conda Environment]({{ relative_root_path }}{% link /assets/conda_env.jpg %})
+    ![Creating a Conda Environment]({{page.root}}{% link /assets/conda_env.jpg %})
 14. Select `Python 3.14`. (the version you just installed)
 
-    ![Selecting Python Version]({{ relative_root_path }}{% link /assets/python_version.jpg %})
+    ![Selecting Python Version]({{page.root}}{% link /assets/python_version.jpg %})
 15. When asked to "Select dependencies to install", click the box next to requirements.txt and click "ok"
     
-    ![Selecting Dependencies]({{ relative_root_path }}{% link /assets/vs_code_dependencies.png %})
+    ![Selecting Dependencies]({{page.root}}{% link /assets/vs_code_dependencies.png %})
 You should now be done!
 
 ### Google Colab
