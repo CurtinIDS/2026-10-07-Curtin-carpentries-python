@@ -271,11 +271,11 @@ SURVEYS -These will automatically link to the carpentries surveys. .
 
 
 <h2 id="setup">Setup</h2>
-
+{% include setup_warning.html %}
 <p>
   To participate in this workshop,
   you <b><u>will</u></b> need to follow the instructions on the <a href="{{ relative_root_path }}{% link setup/index.md %}">setup page</a> <br>
-  In addition, you will need an up-to-date web browser.
+  In addition, you will need an up-to-date web browser. There will be half an hour before class for any issues you cant solve, but this assumes you've already attempted to install the required tools.
 </p>
 
 
