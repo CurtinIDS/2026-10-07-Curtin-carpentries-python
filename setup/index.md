@@ -33,7 +33,7 @@ The full setup instructions are:
 2. Click the green "<> Code" button
     ![Green button]({{page.root}}{% link /assets/setup/github_green_button.png %})
 3. Click "Download ZIP" at the bottom of the dropdown
-4. Save it to your local computer in a place that makes sense (e.g. "Documents/Carpentries"). NB: Many people run into issue if saving the file to a onedrive folder. Please try to save it to your local storage.
+4. Save it to your local computer in a place that makes sense (e.g. "Documents/Carpentries"). NB: Many people run into issues if saving the file to a onedrive folder. Please try to save it to your local storage.
 
     ![Download repo zip]({{page.root}}{% link /assets/setup/extracted.png %})
 
