@@ -58,7 +58,6 @@ vscode_welcome.png
     ![Download Visual Studio Code]({{page.root}}{% link /assets/setup/vs_hide_ai.png %}) 
 12. Check the box to disable AI features. While some people may find these features useful, please disable them for this workshop to maximise your learning.
     ![Download Visual Studio Code]({{page.root}}{% link /assets/setup/vs_hide_ai_checkbox.png %}) 
-    ![Clone Repository with Visual Studio Code]({{page.root}}{% link /assets/vs_code_clone_repo.jpg %})
     Now we need to finish setting up VSCode by installing useful packages.
 13. Navigate to the Extension sidebar (1. in image) then search for `Python` (2.) and click on it. Click the green "Install" button (3.) to install it. The extension will be authored by "Microsoft" at "microsoft.com"
     ![Installing Extensions]({{page.root}}{% link /assets/vs_code_extensions.jpg %})
